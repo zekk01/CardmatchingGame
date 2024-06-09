@@ -4,11 +4,11 @@
 This project is a card-matching game developed in Unity. The game allows players to flip and match pairs of cards within a grid layout. The game features various layouts, sound effects, a scoring system, and optimized performance through the use of object pooling for card management.
 
 ## Features
-Various Card Layouts: Supports multiple grid layouts (e.g., 2x2, 2x3, 3x4, 4x5, 5x6).
-Scoring System: Players earn points by matching pairs of cards. The score resets at the start of each game.
-Sound Effects: Includes sound effects for card flipping, matches, mismatches, and game over events.
-Object Pooling: Utilizes a card pooling mechanism to optimize performance by reusing card objects.
-User Interface: Displays the current score and allows layout selection via an Inspector dropdown.
+- **Various Card Layouts:** Supports multiple grid layouts (e.g., 2x2, 2x3, 3x4, 4x5, 5x6).
+- **Scoring System:** Players earn points by matching pairs of cards. The score resets at the start of each game.
+- **Sound Effects:** Includes sound effects for card flipping, matches, mismatches, and game over events.
+- **Object Pooling:** Utilizes a card pooling mechanism to optimize performance by reusing card objects.
+- **User Interface:** Displays the current score and allows layout selection via an Inspector dropdown.
 
 ## Setup and Installation
 Clone the Repository:
@@ -47,7 +47,7 @@ SaveLoadSystem.cs: Manages saving and loading game progress (e.g., score).
 Audio Management: Plays sound effects for various game events.
 
 ## Detailed Class Descriptions
-GameController
+**GameController**
 Instance: Singleton instance of the GameController.
 InitializeCardsByLayout(): Initializes the game with the selected card layout.
 HandleCardFlip(Card card): Handles the logic for flipping a card.
@@ -62,7 +62,7 @@ UpdateScoreDisplay(): Updates the score display on the UI.
 ResetScore(): Resets the score to zero.
 SaveProgress(): Saves the current score using SaveLoadSystem.
 
-Card
+**Card**
 Flip(): Flips the card to show its front or back.
 MarkAsMatched(): Marks the card as matched.
 SetFrontSprite(Sprite frontSprite): Sets the sprite for the front of the card.
@@ -70,7 +70,7 @@ GetFrontSprite(): Returns the sprite of the card's front.
 CanFlip(): Checks if the card can be flipped.
 
 
-SaveLoadSystem
+**SaveLoadSystem**
 SaveProgress(int score): Saves the current score to PlayerPrefs.
 LoadProgress(): Loads the saved score from PlayerPrefs.
 
