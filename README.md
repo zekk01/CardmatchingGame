@@ -1,24 +1,20 @@
-Card Matching Game
+# 🎴 Card Matching Game 🎴
 
-Overview
+##Overview
 This project is a card-matching game developed in Unity. The game allows players to flip and match pairs of cards within a grid layout. The game features various layouts, sound effects, a scoring system, and optimized performance through the use of object pooling for card management.
 
-Features
+##Features
 Various Card Layouts: Supports multiple grid layouts (e.g., 2x2, 2x3, 3x4, 4x5, 5x6).
 Scoring System: Players earn points by matching pairs of cards. The score resets at the start of each game.
 Sound Effects: Includes sound effects for card flipping, matches, mismatches, and game over events.
 Object Pooling: Utilizes a card pooling mechanism to optimize performance by reusing card objects.
 User Interface: Displays the current score and allows layout selection via an Inspector dropdown.
 
-Setup and Installation
+##Setup and Installation
 Clone the Repository:
 
-bash
-Copy code
-git clone <repository-url>
 
-
-Open in Unity:
+##Open in Unity:
 
 Open Unity Hub and add the cloned project.
 Open the project in Unity Editor.
@@ -29,7 +25,7 @@ Run the Game:
 
 Press the Play button in Unity Editor to start the game.
 
-How to Play
+##How to Play
 Select Layout:
 
 Use the Inspector to select the desired card layout from the CardLayout dropdown.
@@ -44,13 +40,13 @@ Game Over:
 
 The game ends when all pairs are matched. The score is reset for the next game.
 
-Code Structure
+##Code Structure
 GameController.cs: Manages the game logic, card initialization, and scoring system.
 Card.cs: Handles individual card behavior, including flipping and matching.
 SaveLoadSystem.cs: Manages saving and loading game progress (e.g., score).
 Audio Management: Plays sound effects for various game events.
 
-Detailed Class Descriptions
+##Detailed Class Descriptions
 GameController
 Instance: Singleton instance of the GameController.
 InitializeCardsByLayout(): Initializes the game with the selected card layout.
@@ -78,14 +74,14 @@ SaveLoadSystem
 SaveProgress(int score): Saves the current score to PlayerPrefs.
 LoadProgress(): Loads the saved score from PlayerPrefs.
 
-Note: 
+##Note: 
 "Ensure smooth gameplay with animations for card flipping and matching. The system
 should allow continuous card flipping without requiring users to wait for card"
 I decided not to implement this task as I believe that the game experience is ruined by multiple clicking in a row, as it removes the memory factor from the game loop. the player can easily press randomly until the achieved combination works (especialy for smaller grids)
 as for the implementation of the task, a simple multithreading with the main thread running all Unity API calls and the other threads to preform the non Unity API tasks such as checking car matches. (a thread to evaluate card matches while allowing continuous card flipping on the main thread.)
 
 
-Contact
+##Contact
 For any questions or feedback, please contact [zainkassem7@gmail.com].
 
 
