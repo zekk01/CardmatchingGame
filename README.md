@@ -1,7 +1,7 @@
-# 🎴 Card Matching Game 🎴
+# 🎴 MysteryPairs  🎴
 
 ## Overview
-This project is a card-matching game developed in Unity. The game allows players to flip and match pairs of cards within a grid layout. The game features various layouts, sound effects, a scoring system, and optimized performance through the use of object pooling for card management.
+This project is a game developed in Unity. The game allows players to flip and match pairs within a grid layout. The game features various layouts, sound effects, a scoring system, and optimized performance through the use of object pooling for card management.
 
 ## Features
 - **Various Card Layouts:** Supports multiple grid layouts (e.g., 2x2, 2x3, 3x4, 4x5, 5x6).
